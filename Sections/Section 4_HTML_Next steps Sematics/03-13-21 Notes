@@ -1,0 +1,49 @@
+This week has been a very busy week for me and unfortunately I have not been able to get to my studies.
+Maybe it's anxiety or something else but yesterday I did have a free day and did not study nor code, but today feels like a good day
+to put a solid 6 hours in. 
+
+Block and Inline Elements
+
+    Block would be something that wants to exist on its own (think <p> tags) taking up a whole block across the page
+    While Inline does not "care" if it is next to another element. It takes up a little space as possible
+
+Span is a generic container that is an inline element, as opposed to div which is a block line element 
+
+<HR> is a horizontal break, a line that can be styled to thematically separate a paragraph
+<BR> is a break akin to pressing enter in a doc
+<sup> & <sub> elevates or nests something above or below the baseline
+
+Be mindful of reserved characters like "<" ">" and "&" these are used in the syntax of HTML and to use them in basic text we will need to 
+use the entity number which is a way of getting around the reserved characters
+Special characters will start with "&" and end with ";"
+
+
+The instructor provides an example of unneccesary markup by contrasting stripe.com and medium.com, as the former is labeled and structured in a way that is easy to follow and does
+not have unneccesary markups, divs, or useless names while the latter does. I completely understand what he is trying to do by showing us this and as a lesson it does stick home but my thoughts immediately
+went to medium.com and its lack of outward structure. The divs are all labels some combination of "fr hh ka os" two letter groups seemingly randomized. I would bet, if I were a betting man,
+that medium does not use this naming convention internally, but instead has some program or process to randomize the names and structure of the divs as a way to protect their IP.
+
+Semantic Markups to use other than div - This is important for Devs for readability, Screenreaders for those needing assistance, and SEO for the page as a whole
+    Main, the dominant portion of the page exlcuding anything that would not be repeated across a page (navs and footers)
+    Nav, this represents anything on the page that has links to another page or part of the same page. This includes the sidebar etc it does not have to be the main nav at the top of the page.
+    Section element, represents a standalone section of an element. It is very generic, like div, but is better than div as it can be a standalone portion of content while div could theoretically
+        be anything.
+    Article element, a self contained composition in a document page intending to be reused or distributed across many different webpages.
+        Needs a heading to explain what it is or about. 
+    Aside, indirectly related or tangential. Think the small little blurbs you would find in your text book. 
+    Header, introductory content things to welcome or explain a site to someone
+    Footer, place for the site map or other useful content for the footer.
+    Time, is used for machine call outs of the time.
+    Figure, is something to call attention to - most usually a picture with a caption (yes I could use Div but couldnt I for all of this?)
+
+Emmet Tips!
+    ">" is used to nest an element inside of another element: main>h1>p1
+    "+" gives me brother elements, understand them as block elements where as > gives me childed elements
+    "*" multiplies the line. nav>ul>li*5 would give me 5 li nested in the ul nested in the nav
+    "$" gives me a count nav>ul>li$*5 would give me 5 numbers li's
+    "{}"is a way to write text between the element
+    "[]" will give me a way to write inside of the element (useful for anchor tags and hrefs)
+
+
+
+.

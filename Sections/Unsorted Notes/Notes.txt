@@ -1,0 +1,26 @@
+For H tags - You only want *1* h1 tag in a page. You may have more h2-h6 tags but only 1
+H1 Tag.
+
+While H tags do have a default size we are not using them for their size, the number
+in the tag is what we use to navigate a web page. Never have an H tag X number without
+the previous H tags used in the document. As in never have an H3 tag without first having
+an H2 and H1 tag.
+
+The <HTML> tag is the root element. Only allows the Head and Body tag. The Head tag should
+include meta information, anything that does not show up on the page. The Body tag is the 
+content portion of the page. The Title is used for links etc.
+
+Auto format seems to be something I am going to be taking advantage of.
+The majority of the first 4 hours of these lectures is largely review. I have pulled
+some information from the lecture, seen above, but for the most part it has been difficult to 
+maintain concentration, but I am managing. It is important to take in as much information
+as I can.
+
+While I am writing this in the notepad, I desperately want to develop a workflow
+that will have this note document in my programming folder. When i actually need to write code
+I will structure my files as such.
+
+
+<span></span> is an inline way to section off something and then refer to it within the 
+css
+

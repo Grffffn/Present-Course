@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--The instructor is going to code a marathon form in the lecture but asked we do it on our own. If I am correct and do not need any significant help this
+        will be my only attempt. If I need to follow his instructions then I will have a second codeAlong document.-->
+
+    <title>Code Along: Marathon Form</title>
+</head>
+<body>
+    
+    <h1>Race Registration!</h1>
+
+    <form action="/marthon">
+    
+        <!--Name entry for race-->
+        <div>
+            <label for="nameFirst">First Name</label>
+            <input type="text" name="firstName" id="nameFirst" placeholder="Type Here" required>
+
+            <label for="nameLast">Last Name</label>
+            <input type="text" name="lastname" id="nameLast" placeholder="Type Here" required>
+        </div>
+        <!--End Name-->
+
+        <!--Race Selection-->
+        <div>
+            <p>Select a Race:</p>
+
+            <!--So in my lecture the instructor made a point of saying that it is best practice to use input and label separate from one another and this makes sense. I still have not watched
+                his video so I am not sure if he will cover this but if the input for a radio button is nested inside of the label the entirety of the label can be used to select the radio button.
+                Otherwise the user must select the button itself to interact. I will leave this with the nested version and the remaining unnested.-->
+
+            <!-- Nevermind. Turns out this is not the case and I simply overlooked filling out the for and id tags which meant that the two elements were not connected how they should have been.
+                I will leave this as evidence that I am not copy/pasting my answers to speedrunAny% my learning.-->
+
+            <label for="funRun">
+                <input type="radio" name="race" id="funRun" value="5k"> Fun Run
+            </label>
+            <br>
+  
+            <input type="radio" name="race" id="half" value="half">
+            <label for="half">Half Marathon</label>
+            <br>
+  
+            <input type="radio" name="race" id="full" value="full">
+            <label for="full">Full Marathon</label>
+            <br>
+  
+            <input type="radio" name="race" id="fullAndHalf" value="fullAndHalf">
+            <label for="fullAndHalf">Full and a Half Marathon</label>
+            <br>
+  
+            <input type="radio" name="race" id="double" value="double">
+            <label for="double">Double Marathon</label>
+            <br>
+  
+            <input type="radio" name="race" id="ultra" value="ultra">
+            <label for="ultra">Ultra Marathon</label>
+            <br>    
+
+        </div>
+        <!--End Race-->
+
+        <!--Starting email and password registration-->
+        <div>
+            
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" required>
+
+
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" required minlength="2" maxlength="16">
+
+        </div>
+        <!--End Email-->
+
+        <!-- Starting Age group Drop down -->
+        <div>
+
+            <label for="ageGroup">Please Select an Age Group:</label>
+
+            <select name="ageGroup" id="ageGroup" required >
+                <option value="12">Under 12</option>
+                <option value="18">Under 18</option>
+                <option value="Adult">Adult</option>
+                <option value="Senior">Senior</option>
+            
+            </select>    
+
+        </div>
+        <!--End Dropdown-->
+
+        <!--Submit Button-->
+        <div>
+
+            <button type="submit">Register</button>
+
+        </div>
+        <!--End Button Sumbit-->
+       
+    </form>
+
+
+</body>
+</html>

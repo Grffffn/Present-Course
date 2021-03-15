@@ -1,0 +1,57 @@
+Monday Morning
+
+Starting a new chapter, Forms and Tables
+
+I did some reading over the weekend on projects that I will be attempting for my Saturday free sessions after I complete this course.
+I have thoughts about trying to recreate the click-baity mobile games I see on ads. I've never played one but from my understanding they're
+not what they say they are and they would be a good practice project.
+
+Onto my lessons.
+
+
+I'm glad this is the end of the HTML section. There is very little logic or nuance to the topic and it is not what I expected from programming, although I know its not actually
+programming.
+
+Side Note: I cannot have any special characters in the names of any of my folders or files and be able to run the live server extension. "&" was the culpret and cost me 
+twenty minutes. Don't be cute, KISS.
+
+Tables:
+    A two dimensional structured data set, rows & columns. 
+    Largely outdated; used extensively in the early days of web development to layout a website. Almost entirely unneeded in modern web development unless youre building an
+        actual dataset using a table, like the mattress specs he showed as an example.
+
+    Elements contained within a Table (closed unless specified)
+        <table>
+        <td> Table Date Cell - Represents a single cell of data
+        <tr> Table Row - used to group cells into a row. Wrap around a TD to create the rows
+        <th> Table Headings - Defines a header, must be wrapped in its own <tr>. 
+        <thead>/<tfoot> Defines a set of rows defining the head/foot of the coumns of the table. Wrap the rows or footers with <thead> (or <tfoot>). You can nest
+            a <thead>/<tfoot> inside of another <thead>/<tfoot> to have subsections of our header/footer.
+        ' rowspan="x" ' used to format the sizing of the rows. Aka How many rows should it take up.
+        ' colspan="x" ' used to format the sizing of the columns. Aka how many columns should it take up.
+        
+
+Forms:
+    The form element itself is a shell or container that does not have any visual impact. Forms will contain inputs, checkboxes, buttons, etc. Very very important.
+    The action attribute specifies whwere the form data should be section.
+    The method attribute specifies which http method should be used.
+    <input> is the most common element. There are 20+ possible types. The "type" attribute is the most important part as this is what dictates what behavior.
+        defaults to a text box.
+        Does not need to be closed.
+        Placeholder="" is used to demonstrate what to write into an input.
+        Label associated the text and the form-control/input for screenreaders etc. The label itself can be clicked to interact with the input
+            id="" is used on the input and for="" is used in the label to link them. Do not reuse labels.
+            You can nest the input inside of the label and not have to associate the two but this is 1 less common and 2 makes styling more difficult.
+                I guess the standardizing the approach makes it easier for other programs to crawl through etc.
+    <button> Will be closed.
+        The button will submit any input to the action of the form. This is the default behavior.
+        We can pass in a behavior using ' type="button" ' to make it a regular buttont that does not pass it to the form action.
+    ' name="" ' is the name used to pass the data to the server to be used. 
+        put this on every label you make
+        name can be problematic as it puts the request into plain text in the search bar when entered. For passwords this can be an issue but using
+            different kinds of requests can make this less of an issue.
+    You can have the action of a form be entered to a different site, most notable sending the request to google or reddit to use their search functions
+        to have this work the way it is intended the name must be identical to the logic of the server you are sending the data to.
+        
+
+

@@ -1,0 +1,82 @@
+Getting started a bit late this morning but looking forward to a solid 6 hours of study.
+
+I am going to use this document like the last few notes documents but I am going to try and actively write sudo-code into the document
+rather than write notes on the code without direct comparisons. I found myself having to look up the syntax of some of the html elements
+so having direct examples in my notes should be a good resource.
+
+Notes:
+
+CSS:
+
+    Inline - terrible. This seems impossible to scale
+    Style - seems more scaleable for an invidivual document but difficult to share across a website
+    External - best approach, scalable and sharable
+
+    the link element - goes into the head under the title. This is how to share the css style sheet with the html document.
+    <************>
+    <link rel="stylesheet" href="my_styles.css">
+    <************>
+        rel is how the html doc understands what we're giving it. Says not mandatory but doesn't seem like a lot of work to include it.
+        href is where/name of the sheet itself. If your file is in another folder you'll need to direct to it.
+
+    properties - what goes in between the {}
+        its what acts on the html itself.
+        "color" - changes the text color, accepts many different formats (#dec, names, hsl, etc)
+
+        "background-color": sets the background color... go figure
+        "background" does something similar to "background-color" but does more. They are not the same. The gradient, an image, and many other things can be does  
+            by "background" that "background-color" cannot do. Do not confuse them.
+        
+        In hexdec for colors if the three triplets are the same you only need to write one --> #112233 can be #123. #000000 can be #000 etc etc
+
+    Text properties:
+        text-align - sets the horizontal alignment of an element - more specifically where the text within an element is aligned within that element
+            {
+            text-align: center;
+        }
+
+        font-weight - control the bold or lightness of a text. Uses words like "bolder" or "lighter" but traditionally uses numbers. "400" is considered standard while "700" is considered bold.
+            These numbers do go lower and higher but those are the standard. Not ever font has the available weights, it differs by font. If your chosen font does not have access to the numbers
+                or setting you're asking for it will default to the closest available weight. 
+            {
+                font-weight: 400; (700, 900, 100, bolder etc)
+            }
+        
+        text-decoration - controls the appearance of decorative lines on the text; think underlines, overlines, strikethroughs etc
+            but also the color, the weight, all of the properties of the line. says he uses it mostly to remove the default with "none"
+            {
+                text-decoration: #000000 underline wavy;
+            }
+
+        line-height - controls the height of a line (think spacing between the bordering lines.)
+        {
+            line-height: normal; (2.5 [this takes the size of the font as a reference], 3em[learn later], 150%, 32px)
+        }
+
+        letter-spacing - this is the kerneling?? i think. Its the spacing between lines.
+        {
+            letter-spacing: 15px;
+        }
+
+    Font Size Basics:
+        Relative - 
+            Em 
+            REM 
+            VH 
+            %
+
+        Absolute - 
+            px - pixels, not advised to use but it will always be the same no matter where or what. It is not necessarily going to be 1 pixel for your monitor but it will be close and be small.
+                "px" is the unit. Do not use for responsive websites.
+            pt 
+            cm 
+            in 
+            mm 
+
+    Font Family - Changing fonts is not the easiest thing to do but it is the browser or websafe fonts. There is not a ton. "cssfontstack.com" to 
+        look at whether nor not the font is used on different machines. A font stack is a list of fonts in your document you would like to use in order.
+        {
+            font-family: Ariel, Times New Roman, Futura, UI, Segoe, sans-serif; (it will move down the list if one is not found. There are also families of fonts but he doesn't go into it in much detail)
+        }
+
+    

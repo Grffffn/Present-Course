@@ -1,0 +1,71 @@
+The CSS box model - CSS sees everything within a box or as a box
+
+Width and Height are the most basic parts of the box.
+
+The Border - self explanatory. But there are many properites of the border that can be changed
+    Border-Width - thinkness
+    Border-Color - color
+    Border-style - dashed, solid, etc
+
+    If you have a div and you add a border to it the border will add additional space ontop of the box. So if the box is 200x200 and the border is 5px then the final box will be 
+        210px x 210px. This is a problem if things need to add up. Usuing border-box will now subtract the border from the overall box rather than add to it, so whatever you specify as the
+        box size WILL BE the box size.
+    
+    something {
+        box-sizing: border-box;
+    }
+
+    If you wish you can supply different properties of the border in the same line. They go in order ( width | style | color )
+
+    Radius - Much like the border you can set multiple within one line. Lots of different units to measure but it is advised to keep it to %. (50% is a cirle)
+
+Padding
+    You can set it for the individual sides or just use the shorthand
+        top | right | bottom | left (CLOCKWISE!!!)
+        top | horizontal | bottom
+        vertical | horizontal
+
+Margin - is the spacing outside of the border that is the space between other elements
+    Same as the padding for shorthand syntax
+        ** | ** | ** | **
+
+    h1 will by default get margin (do other headings though??)
+
+Display - This is the most important property
+    Inline - span inline by default
+    Block - headings, paragraphs are block-level by default
+    Inline-Block 
+
+    display lets us change their behaviors
+
+    inline block elements ignore width, padding, etc. It does not push other content away
+    block does not ignore those
+
+    inline-block behaves like inline but width, height, margin, and padding are respected
+
+CSS Units revisted
+
+    Relative - relative units are always relative to some other value. Sometimes its a value from the parent and other times its a value from the element itself
+        Units
+            em
+                Em's are relative units. With font-size, 1em equals the font-size of the parent. 2em's is twice the font-size of the parent, etc
+                Some em's are from the element itself - like margin.
+                Shortcomings - nested em's will grow exponentially the further down you go as it gets its reference from its direct parent, and the further you nest them the more it will multiple.
+            rem
+                much like EM's, REM's derive their value or size from a parent but in REM's the parent is the root html's font-size, and it will always be this.
+            vh
+            vw
+            % 
+                Width: 50% - half the width of the parent
+                line-height: 50% - half the font-size of the element itself
+
+
+
+
+
+    Absolute - the other units, while they exist, arte not used as often as pixel
+        px
+        pt 
+        cm 
+        in 
+        mm

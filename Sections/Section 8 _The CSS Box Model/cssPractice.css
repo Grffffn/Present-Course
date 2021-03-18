@@ -1,0 +1,26 @@
+/* apply the following to the styles
+210px width
+1px grey border solid border style
+5px border radius
+center text align */
+
+/* the imgae
+5px border with color of rbg(236, 183, 191) solid border style
+200px wide
+50% border radius */
+
+.card {
+    width:210px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    text-align: center;
+}
+
+img{
+    width: 200px;
+    border: 5px solid rgb(236, 183, 191);
+    border-radius: 50%;
+}
+
+/* so im supposed to have things on different lines but honestly if he's telling me HE styles things all on the same line then I will as well. Whatsthe point of learning something to
+    immediately unlearn it. */ 

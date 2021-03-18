@@ -53,4 +53,29 @@ Pseudo Classes - keyword added to a selector that specifies a special state of t
     }
 
 
-STOPPING 75% of the way through. Brain fog from pollen is killing me. Will pick up in morning.
+Pseudo Elements!
+    Keyword added to a selector that lets you style a particular part of the selected element!
+        ::after
+        ::before
+        ::first-letter
+        ::first-line
+        ::selection (This is when something is)
+    
+    Two! Count 'em, two! semi-colons for Psuedo-Elements (only 1 for Pseudo-Classes)!
+
+Cascade - The styles for the stylesheet are completed in order, which ever is the last set property will be the one displayed.
+    In addition, multiple stylesheets will hold true to the same logic. The latest stylesheet linked will be the one used.
+
+Specificity - the more specific style is the more the browser will value it for its style. General formula goes:
+    Id > Class, Attribute, Pseudo-classes selector > Element Pseudo-Element Selectors.
+    There is a formula that takes a score into account, it is adviced to not worry about memorizing it but to familarize yourself with the general idea rather than the numbers
+    In-line styles are more specific than any stylesheet stylings. 
+     "!important" after a selector signals to the browser that this is the exception to the model and should always win the specificity.
+        Shouldn't use this unless there is no other option.
+
+Inheritance - styles will be inherited by child elements from the element it is nested in unless otherwise specified. Inheritance will be the closest parent with a specified element.
+    some elements do not always inherit (form is one of them) if we want this to happen inside the element give it an attribuite with the style "inherit"
+        button, input {
+            color: inherit;
+        }
+    

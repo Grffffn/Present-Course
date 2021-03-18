@@ -1,0 +1,46 @@
+/* Rules for this practice problem
+    Give all li elements the text color of blue
+    Give all elements with the class of done the text color grey
+    Give the element with the id clear a red background and white text */
+
+li{
+    color: blue;
+}
+
+#clear{
+    background-color: red;
+    color: white;
+}
+
+.done{
+    color: grey;
+}
+
+
+/* Rules for this practice problem
+    Give only the links in the head: font size 30px & color of teal
+    Give only the links inside the paragraph wioth the id "dislikes": bolded & color of red*/
+
+    /* this was much harder than anticipated. My original thought was to select first the p element, select dislikes, and then the anchor tags
+        but it turns out I could just search for the dislike id, which would isolate that paragraph anyway and then modify the anchor tags within it.
+        This is what I get for not reading through the html document fully before trying to style it. */
+
+header a {
+    font-size: 30px;
+    color: teal;
+}
+
+#dislikes a {
+    color: red;
+    font-weight: bold;
+}
+
+/* Every other square should be either black or red */
+div .square:nth-of-type(2n+1) {
+    background-color:red;
+    
+}
+
+div .square:nth-of-type(2n) {
+    background-color:black;
+}

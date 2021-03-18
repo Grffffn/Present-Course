@@ -1,0 +1,56 @@
+
+
+
+
+
+selector {
+
+    property: value;
+}
+
+the selector is what we are instructing the css to work on, the property is self explanatory (it is the property or attribute of the selector we are changing), and the value to the end value
+    of the selector property we are manipulating.
+
+* - the universal selector. Selects every possible element on the page.
+
+element selector - selects all elements of that type (img, div, button, etc etc)
+
+a comma can combine elements in a selector list. (h1, h2 would combine all h1's and h2's)
+
+# - The ID selector. Parses and finds the ID in the html document and focuses in on it. This is used to style a SINGULAR THING. Keep ID's to a minimum on a page.
+
+. - The Class selector. This is similar to the ID selector but it is something that is to be used by multiple elements.
+
+The Descendant Selector - start with the base selector (in this case "li") and then add a space and add the sub-selector (in this case "a") to select all anchor tags ("a") within the "li" element
+    li a {
+        color:teal;
+    }
+    No 'li" will be styled with the above, only the "a" inside of "li"
+    This is repeatable and can be nested as far down as you like but isn't the best practice.
+
+"+" is the combinator that modifies any element that comes directly after the first. So a "footer + a" will only change the a that is directly following the footer, not nested or a child.
+    a good example of this is
+        header + button{
+
+        }
+    which would change the button, just one, that is immediately following the header. 
+
+">" is the direct child combinato. It has to be one level down, only one level. 
+    Header > a {
+
+    }
+    would all this to be modified but if it is further nested it will not be changed
+
+The Attribute Selector -select elements based on attribute. The this is used a lot for inputs.
+    input[type="password"] {
+        color: blue
+    }
+    There are ways to specify how and what is styled, even filtering but not used frequently
+
+Pseudo Classes - keyword added to a selector that specifies a special state of the selected elements 
+    a:hover{
+        color: orange
+    }
+
+
+STOPPING 75% of the way through. Brain fog from pollen is killing me. Will pick up in morning.

@@ -1,0 +1,35 @@
+FLEXBOX!
+
+So I'm familar with the concept, not that I have used it ever, but I have heard about it and how it is different from regular css
+    which I am so hyped for. 
+
+
+    There are two axises that comprise flexbox, the x and the y axises. The standard direction (or main axis) will be horizontal while the other axis (the cross axis) is vertical.
+        we can change this property with flex-direction: row; (the default) flex-direction: row-reverse; column; column-reverse;
+
+    display must be set to flex.
+        display: flex;
+
+    
+    justify-content - this determines how the content is distributed across the main axis.
+        flex-start; (the default); flex-end; center; space-between (takes all of the extra space and distributes it around the elements but not on the outside edges); 
+        space-around (give each element equal space around it); space-evenly (makes sure the space between all elements and the container is even);
+
+    flex-wrap - determines whether or not the contents wrap along the main axis or onto a new line. If there is no flex-wrap the contents will transform to fit themselves
+        onto the mainline, if it is used then they will spill over onto a new line rather than bunching up.
+        : wrap; goes will the main axis while : wrap-reverse; is the opposite.
+        Determines the diretion along the cross axis (a better way to think of it)
+
+    align-items - distributes space or distribute our items along the cross-axis. 
+        : flex-start; flex-end; center; baseline; and more
+
+    flex-basis - defines the initial size of an element before additional space is distributed
+    flex-grow - controls the amount of available space an element should take up. Accepts a unit-less number value
+    flex-shrink - If items are larger than the container, they shrink according to flex-shrink 
+
+    "flex" is used as the shorthand for these as the flex properties are used so frequently. It will accept three values, each meaning something different
+        : flex-grow | flex-shrink | flex-basis 
+        : flex-grow | flex-shrink (if no unit)
+        : flex-grow | flex-basis (if unit)
+        
+        

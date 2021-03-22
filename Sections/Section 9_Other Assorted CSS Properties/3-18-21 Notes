@@ -1,0 +1,47 @@
+This section will cover opacity, alpha channel, position, transforms, transitions, fonts, and background
+
+
+opacity + alpha channel
+    alpha channel is rgba - the a is the new part as it controls the opacity of the color with 0 being NOT transparent while 1 is FULLy transparent
+    The thing to note is the opacity property for an element is not the same as the alpha channel. It will function on the whole element and its logic is backwards so 0 is transparent with 1 being not
+
+Position - This is apparently a very dense and confusing topic for beginners
+    These are the following states of position:
+        static - This is the default. Properties like top will do nothing as it is static
+        relative - keep the element positioned to the normal flow of the document but it can be offset RELATIVE TO ITSELF and does not affect the position of other elements.
+        absolute - the element is removed from the normal document flow and no space is created for the element in the page layout. If it is not nested inside of a positioned
+            element it will place itself relative to the body. A parent must be positioned with anything other than static. If not its ancestor would be body. 
+        fixed - much like absolute but it is positioned to the initial containing block (like absolute if its parent didnt have a position). small caviet for something but he 
+            isnt showing it to us. This is a cool way to make sure a nav bar always stays at the top of someones page.
+        sticky - also exists but we're not going to be covering it. Its a way for something to stay in place except when say scrolling then it will stay at the top of the page.
+
+Transitions - allows us to animate the transition of one state of the element to another.
+    transition: 1s; (would make the transition of say :hover take 1 second allowing for a much smoother change in state)
+    In javascript we can add or remove or change properities on the fly 
+    The syntax is the following
+
+    property name | duration | timing function | delay 
+
+    you can add a ; to the end and then specify a new property
+
+    transition-timing-function are  the way a transiton occurs and how it gets there. ease, steps(), linear, are all ways to transiton 
+
+    easings.net good resource for easing curve math. 
+
+Transform - warps, scales, skews, & mores!
+    angel - can use degrees, radians, or % turns
+        transform: rotate(45deg [1.25turn, -45deg]);
+        transform-origin: bottom right; [this pins the element at that point and forces the rotation around that point]
+        transform: rotateY(0);
+        transform: rotateX(45deg);
+    
+    scale - grows or shrinks an element. Can use scale3d, scaleX, scaleY, scaleZ
+        can use shorthand with the x,y axis in the ()
+
+    translate, x, y, etc - this moves the element
+        transform: translateX(200px); moves it 200px to the right
+            translate() takes two values, an x and a y.
+
+    skew, x, y - skews the element on a plane.
+        transform: skew(30deg);
+

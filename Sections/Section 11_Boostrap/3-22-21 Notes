@@ -1,0 +1,21 @@
+Bootstrap!
+
+A third-party css library that has been made to use bootstrap to quickly make css.
+
+It is possible to link from a CDN, a third party delievery network, just the same as a css stylesheet. If you include your own stylesheet ref
+after the bootstrap one it is possible to overrride and have custom css
+
+    So there are many things within bootstrap that I have not written notes for simply due to the fact that there would be so much to write about. 
+After about 40 minutes of lectures and another 40ish minutes of going through the documentation there is just no way I am going to be able to remember
+everything, even if I took notes.
+    I think the more important takeaway from Bootstrap, CSS, and HTML is that is is not the most difficult thing to spin up a cookie-cutter website with minimal
+functionality. Bootstrap to me seems like a way to generate websites based of previously written "code" (and in the vein why wouldnt I write my own templates to use, maybe
+ill do this as a project) in the way that carries with it the most momentum, in other words being able to go from concept to tangible asap. While going through the HTML and CSS
+portions of this course I kept becoming frustrated with the pace of the course. I wanted to make the Next Best ThingTM right now! But thats not possible nor reasonable
+and I have tried to keep to the itinerary. While I have looked ahead at some of the other projects I keep mysefl grounded by reminding myself what the true focus is of this
+endevor. I need a 30,000 mile view of the field so that I am aware of the direction I am heading while I traverse grounds unknown, if I get too preoccupied with the weeds
+I will lose track of my way and inveitably falter. This course will note make me the Next Big ThingTM but what it will do is help me along my way and I need to remember that.
+No one can know everything about anything, but by becoming familar with the field I can familarize myself with the tools I would need at any given time so that when the time comes
+to use them, I at least know which way to start looking. 
+
+

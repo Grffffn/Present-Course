@@ -1,0 +1,52 @@
+JAVASCRIPT
+
+I am so overjoyed to get into actual programming. I He hints that this will be a slow progression through the topic but in all honesty getting into actual
+logic is something I am looking forward to. I imagine I am going to need to revise how I go about taking notes with a greater focus on actual coding rather than
+note taking so if this format changes you know why.
+
+Primitive Types:
+
+The basic building blocks of the language.
+
+Number
+String
+Boolean
+Null Undefined
+Symbol
+Big Int 
+
+Running the code - we will first be running our code inside Chrome Dev tools console and then eventually switch to IDE's 
+
+
+Number Types -
+    Javascript has ONLY one number type. Positive, negative, whole numbers, decimal numbers.
+
+    % is modulo - which is the remainder operator.  9 % 2 asks who many times does 2 go into 9? (4) okay so what is the remainder (1) - give me the remainder
+        is used to determine whether or not a number is even. If the Mod returns 0 then it is even, a 1 is an odd number.
+
+    ** is the raied power number. 3*2 is 3 raised to the second power.
+
+    NaN is the return when something isn't a number, 0/0 for example. Technically it is a number but what it represents to us is something that cannot have math done to it
+
+
+Variables - Labels for Values. We can store a value and give it a name so that we can:
+    - reference it later
+    - Use vale to do "things"
+    - Change or modify the variable
+
+    Syntax -> let someVariable = value;
+              let year = 1985;
+    
+
+    numYear = 1985 - 1 is self explanatory it can be shorter though
+     
+    numYear -= 1; will do the same thing BUT even shorter
+
+    numYear--; 
+
+Constant - works like a variable in that it is declarable but IT CANNOT be changed
+
+
+
+
+

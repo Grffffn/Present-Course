@@ -1,0 +1,63 @@
+So strings, indices, methods, and random numbers and math object
+
+Much of the code I imagine will be in the console again unfortunately.
+
+Strings: Is how de show JS letters as letters. They must be wrapped in quation marks, double or single it doesnt matter (as longas theyre both of the same type)
+    You can use alternative quotations if you need a quote within a textular field.
+
+    Strings are indexable - If a word is 4 letters long like "word" the w is the 0th letter while d is the 3rd character
+    word[2] would give us 'r'. 
+
+This is very much review from my python experience.
+
+    All strings have the length property
+        word.length = 4 (this is the total number of characters not the index)
+
+    Concatination you can add strings together with the + which gives us one string
+
+    when you add a number to a string JS will try and conceptualize them together because you cannot
+        add a number to a string. so 1 + "ajaj" will be "1ajaj" and have the typeOf string.
+
+        a good example of this mistake is
+        
+            year = "1998"
+            let newYear = year + 1;
+
+            which gives us: "19981" not "1999"
+
+String Methods!
+    The instructor defines this as "Pokemon special moves... although all strings can do these"
+        which is very silly to think about. There are many, many, methods, far too many to type out. 
+        but the idea is the same.
+
+        .length is a good example wwe have seen.
+
+        A Method is an action that is built in that can be done on a string.
+
+        syntax is string.method()
+
+            the parentheses specifically execute a method. Without the parentheses you are accessing a property
+                so .length was a bad example. A better example is
+
+                string.toUpperCase()
+        
+            there are destructive and nondestructive methods.
+                Nondestructive leaves our original version
+            
+            Youc an add methods to the same string by just adding them on the string
+                string.trim().toUpperCase()
+                    it works left to right
+
+    Arguments - are inputs we can pass into methods to do a particular thing.
+        abcdzf.indexOf('z')
+            will return 4
+
+            although this will retun the first first occurance of it so it wont show all
+
+
+            slice()
+
+    Back ticks are very important - anything inside of a backtick quote ` hello ${1+3}'
+        will be done as JS. so I would get " hello 4"
+
+        
